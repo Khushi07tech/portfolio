@@ -1,0 +1,35 @@
+============================================================
+CS50x Web Track - Portfolio Homepage Specification
+============================================================
+
+10 HTML TAGS USED:
+-----------------
+1.  <nav>     - Defines the navigation section containing global site links.
+2.  <div>     - Acts as a structural block container for grid and layout alignment.
+3.  <a>       - Creates hyperlinks to connect internal pages and external assets.
+4.  <button>  - Provides an interactive element to trigger actions like the mobile menu.
+5.  <ul>      - Defines an unordered list to group navigation items together.
+6.  <li>      - Represents individual list items inside the navigation menu structure.
+7.  <main>    - Specifies the primary, dominant content area of the document.
+8.  <h1>      - Defines the highest-level main heading on a page.
+9.  <p>       - Represents a paragraph of body text content.
+10. <footer>  - Establishes the bottom section of the page for copyright and signatures.
+
+
+5 CSS PROPERTIES USED:
+---------------------
+1.  font-family - Sets the typeface choices for consistent portfolio typography.
+2.  text-align  - Adjusts the horizontal alignment of headings and layout text.
+3.  transform   - Applies scaling and spatial modifications to elements during hover states.
+4.  box-shadow  - Adds depth and dimension by casting drop shadows underneath components.
+5.  transition  - Smooths out the speed changes when CSS properties animate on hover.
+
+
+JAVASCRIPT DESCRIPTION:
+----------------------
+I used native JavaScript to build a dynamic typewriter engine that targets an empty HTML element on page load and writes out a text string letter-by-letter using a recursive timing loop to establish a technical terminal aesthetic.
+
+
+BOOTSTRAP DESCRIPTION:
+---------------------
+I utilized Bootstrap's CSS framework to engineer a responsive multi-column grid layout for my projects page and integrated the JavaScript bundle to power an interactive, collapsible navigation bar for mobile screen sizes.

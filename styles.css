@@ -1,0 +1,128 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Global Background and Typography Setup */
+body {
+    background-color: #121824;
+    color: #e9ecef;
+}
+
+/* Headings and Accent Structure */
+h1, h2, h3 {
+    color: #cca43b;
+}
+
+/* Center alignments safely without breaking structural layout elements */
+.introduction, .text-center-group {
+    text-align: center;
+}
+
+/* Component Blocks (Cards & Navbars) */
+.card,
+.navbar,
+.list-group-item,
+#contactForm {
+    background-color: #1e2638;
+    color: #e9ecef;
+    border: none;
+}
+
+.navbar {
+    border-bottom: 1px solid rgba(204, 164, 59, 0.2);
+}
+
+/* Hover Interactive Inversions */
+.list-group-item:hover {
+    background-color: #121824;
+}
+
+/* Secure Navbar Specificity Rules */
+.navbar .navbar-nav .nav-link,
+.navbar .container-fluid .navbar-brand {
+    color: #e9ecef !important;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .container-fluid .navbar-brand:hover {
+    color: #cca43b !important;
+}
+
+/* Base Form Inputs (Overriding Bootstrap defaults) */
+#contactForm .form-control {
+    background-color: #121824;
+    color: #e9ecef;
+    border: 1px solid rgba(233, 236, 239, 0.1);
+}
+
+#contactForm .form-control:focus {
+    background-color: #121824 !important;
+    color: #e9ecef !important;
+    border-color: #cca43b !important;
+    box-shadow: 0 0 0 0.25rem rgba(204, 164, 59, 0.25) !important;
+    outline: 0 !important;
+}
+
+/* Button Interactive Mechanics */
+.btn-dark {
+    color: #cca43b;
+    background-color: #121824;
+    border: 1px solid #cca43b;
+}
+
+.btn-dark:hover {
+    background-color: #cca43b;
+    color: #121824;
+}
+
+/* Utility Text Variations */
+.text-muted {
+    color: #a0aec0 !important;
+}
+
+.text-warning,
+.text-secondary:hover {
+    color: #cca43b !important;
+}
+
+.text-warning:hover,
+.text-secondary {
+    color: #a0aec0 !important;
+}
+
+/* Transform and Motion Layout Mechanics */
+.card, .list-group-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.card:hover, .list-group-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(204, 164, 59, 0.2);
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+    color: #cca43b !important;
+}
+
+.logo:hover {
+    color: #e3e4e6 !important;
+    transform: translateX(3px);
+}
+
+#terminal-text::after {
+    content: "|";
+    margin-left: 3px;
+    color: #cca43b;
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opactiy: 1; }
+    50% { opacity: 0; }
+}
